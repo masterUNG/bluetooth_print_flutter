@@ -57,10 +57,10 @@ class _MyAppState extends State<MyApp> {
     if (isConnected == "true") {
       List<int> bytes = await getGraphicsTicket();
       var result = await BluetoothThermalPrinter.writeBytes(bytes);
-      result = await BluetoothThermalPrinter.writeText("Bienvenu a Gyu-Kaku Montreal\n"
-          "(514) 866-8808"
-          "\n1255 Rue Crescent"
-          "\nMontreal, QC H3G 2B1");
+      result = await BluetoothThermalPrinter.writeText("Master Ung\n"
+          "EWTC Institute\n"
+          "Flutter Training\n"
+          "onLine Course \n\n\n");
       print("Print $result");
     } else {
       //Hadnle Not Connected Senario
@@ -95,7 +95,7 @@ class _MyAppState extends State<MyApp> {
         "",
         styles: PosStyles(align: PosAlign.center),linesAfter: 1);
     bytes += generator.text(
-        "Bienvenu a Guy-Kaku Montreal",
+        "Master Ung EWTC Institute",
         styles: PosStyles(
           align: PosAlign.center,
           height: PosTextSize.size1,
@@ -104,7 +104,7 @@ class _MyAppState extends State<MyApp> {
         ),
     );
     bytes += generator.text(
-        "(514) 866-8808\n1255 Rue Crescent,\nMontreal, QC H3G 2B1",
+        "53 Bangna-Trad 14 Bangna BKK 10260",
         styles: PosStyles(
           align: PosAlign.center,
           height: PosTextSize.size1,
